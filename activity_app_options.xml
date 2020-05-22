@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppOptionsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+        <TableLayout
+            android:id="@+id/tableTéma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textMegjelenés"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Háttér stílusa:"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:paddingVertical="10dp"/>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textButtonVilágos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="világos"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:minWidth="80dp"
+                    android:minHeight="25dp" />
+                <TextView
+                    android:id="@+id/textButtonSötét"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sötét"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:minWidth="80dp"
+                    android:minHeight="25dp" />
+            </TableRow>
+            <TextView
+                android:id="@+id/textSzín"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gombok színe:"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:paddingVertical="10dp"/>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textZöld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="zöld"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:minWidth="80dp"
+                    android:minHeight="25dp" />
+                <TextView
+                    android:id="@+id/textKék"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kék"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:minWidth="80dp"
+                    android:minHeight="25dp" />
+                <TextView
+                    android:id="@+id/textPiros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="piros"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:minWidth="80dp"
+                    android:minHeight="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:paddingVertical="15dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textSárga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sárga"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:minWidth="80dp"
+                    android:minHeight="25dp" />
+                <TextView
+                    android:id="@+id/textLila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lila"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:minWidth="80dp"
+                    android:minHeight="25dp" />
+                <TextView
+                    android:id="@+id/textBarna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="barna"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:minWidth="80dp"
+                    android:minHeight="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:paddingVertical="15dp"/>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</ScrollView>

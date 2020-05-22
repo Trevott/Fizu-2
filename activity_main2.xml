@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/textOne"
+            android:text="Új munkanap felvétele"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textDátum"
+            android:layout_below="@+id/textOne"
+            android:text="Dátum:    1991 - 08 - 29  Csütörötk"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:textStyle="bold"/>
+        <TableLayout
+            android:id="@+id/tableNapTípusa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textDátum"
+            android:layout_centerHorizontal="true"
+            android:paddingVertical="10dp">
+            <TableRow>
+                <TextView
+                    android:id="@+id/textMunkanap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="80dp"
+                    android:minHeight="25dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/buttonDátumotMódosít"
+                    android:text="Munkanap"/>
+                <TextView
+                    android:id="@+id/textSzabadság"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="85dp"
+                    android:minHeight="25dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/buttonDátumotMódosít"
+                    android:text="Szabadság"/>
+                <TextView
+                    android:id="@+id/textTáppénz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="70dp"
+                    android:minHeight="25dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/buttonDátumotMódosít"
+                    android:text="Táppénz"/>
+                <TextView
+                    android:id="@+id/textFizetettÜnnep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="80dp"
+                    android:minHeight="25dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/buttonDátumotMódosít"
+                    android:text="Fiz. ünnep"/>
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:id="@+id/textMunkaidő"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tableNapTípusa"
+            android:layout_centerHorizontal="true"
+            android:text="Munkaidő megadása"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TableLayout
+            android:id="@+id/tableMunkaidő"
+            android:layout_below="@+id/textMunkaidő"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <EditText
+                    android:id="@+id/editKezdés"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Kezdés"
+                    android:minWidth="80dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:inputType="numberDecimal" />
+                <TextView
+                    android:id="@+id/firstHyphen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:minWidth="30dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <EditText
+                    android:id="@+id/editVége"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Vége"
+                    android:minWidth="80dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:inputType="numberDecimal" />
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:id="@+id/textTúlóra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tableMunkaidő"
+            android:layout_centerHorizontal="true"
+            android:text="Ebből túlóra:"
+            android:paddingVertical="5dp"/>
+        <TableLayout
+            android:id="@+id/tableTúlóra"
+            android:layout_below="@+id/textTúlóra"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <EditText
+                    android:id="@+id/editKezdésTúlóra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Kezdete"
+                    android:minWidth="80dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:inputType="numberDecimal" />
+                <TextView
+                    android:id="@+id/secondHyphen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:minWidth="30dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <EditText
+                    android:id="@+id/editVégeTúlóra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Vége"
+                    android:minWidth="80dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:inputType="numberDecimal" />
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:id="@+id/textHozzáadás"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tableTúlóra"
+            android:text="Munkanap hozzáadása"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:paddingVertical="20dp" />
+        <TextView
+            android:id="@+id/textEredmény"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textHozzáadás"
+            android:text="Ez évi szabadságok eddig:\nE havi fizetés eddig:"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:paddingVertical="70dp" />
+
+    </RelativeLayout>
+</ScrollView>

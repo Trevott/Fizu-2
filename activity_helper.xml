@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelperActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+        <TextView
+            android:id="@+id/textSúgó1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp"
+            android:text="Figyelem!"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:paddingHorizontal="20dp"/>
+        <TextView
+            android:id="@+id/textSúgó2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textSúgó1"
+            android:text="Az alkalmazás csupán a hó végi fizetés megbecslésére, nem pedig pontos értékek kiszámolására
+szolgál. \nNe használd bérszámfejtésre!\n"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:paddingHorizontal="25dp"/>
+
+        <TextView
+            android:id="@+id/textSúgó3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textSúgó2"
+            android:paddingVertical="20dp"
+            android:text="További tudnivalók:"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:paddingHorizontal="20dp"/>
+        <TextView
+            android:id="@+id/textSúgó4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textSúgó3"
+            android:text="- törölni munkanapot az adott munkanapra való kattintással lehet\n
+- a programban (egyelőre) nem állítható be étkezési szünetek levonása\n
+- a 'ledolgozós' szombatokat (egyelőre) nem veszi figyelembe a program\n
+- fizetési előleget (egyelőre) nem lehet megadni\n
+- (egyelőre) a nem 'egész órás' kezdő és befejező időpontokat a következő képpen kell megadni: 8:30 helyett 8.5 vagy
+8:45 helyett 8.75 (nagyon fontos, hogy pontot kell használni nem pedig vesszőt). Továbbá csak negyed, fél és háromnegyed
+órákat tud kezelni a program. Tehát a 8.2 már nem lesz helyes.\n
+- el lehet rejteni egy-egy hónap munkanapjait a munkanap listában, ehhez csupán a hónap sorára kell bökni (megismételve ezt egy már elrejtett hónapon visszakapjuk
+a munkanapok listáját\n
+- a program csak angol vagy magyar nyelvű rendszer alatt működik megfelelően"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:paddingHorizontal="25dp"/>
+
+        <TextView
+            android:id="@+id/textSúgó5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textSúgó4"
+            android:paddingVertical="20dp"
+            android:text="A fejlesztő:"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:paddingHorizontal="20dp"/>
+        <TextView
+            android:id="@+id/textSúgó6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textSúgó5"
+            android:text="Ez az alkalmazás csupán egy egyszemélyes projekt. Egymagam készítem és tesztelem az appot, ebből fakadóan
+előfordulhatnak mind a program működése során, mind a számítás helyességét illetően olyan problémák, melyeket nem
+vettem észre a tesztelések során. Kezeld fenntartásokkal az itt kapott eredményeket!"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:paddingHorizontal="25dp"/>
+    </RelativeLayout>
+
+</ScrollView>
